@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            border:2px solid black;
+            width:300px;
+            height:400px;
+            border-radius:7px;
+            border-color:grey;
+            margin:100px auto;
+            box-shadow:20px 20px 50px 13px grey;
+            padding:20px;
+        }
+        input{
+            outline:none;
+            border-left:none;
+            border-right:none;
+            border-top:none;
+            caret-color:blue;
+            width:90px;
+        }
+        label{
+            color:grey;
+        }
+        button
+        {
+            padding:15px;
+            width:200px;
+            display:block;
+            margin:auto;
+            border-radius:50px;
+            background-color:rgb(0, 89, 255);
+            color:white;
+            cursor: pointer;
+            border:none;
+        }
+        button:hover{
+            background-color:rgb(111, 111, 120);
+        }
+        #result{
+            cursor: not-allowed;
+            margin: auto;
+            display: block;
+            width:200px;
+        }
+        
+        #re,#convert{
+            display: block;
+            text-align: center;
+        }
+        #type2{
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1> Temperature Convertor </h1>
+
+    <label for="degrees">Degrees</label>
+
+    <input type="number" id="degrees" value="0">
+    &nbsp;&nbsp;&nbsp;
+
+    <label for="type">Type</label>
+    <select name="type" id="type">
+        <option value="Fahrenheit" id="f">Fahrenheit</option>
+        <option value="Celsius" id="c">Celcius</option>
+        <option value="Kelvin" id="k">Kelvin</option>
+    </select>
+
+    <br><br>
+    
+    <label for="convert"id="convert">Convert Into</label><br>
+    <select name="type" id="type2">
+        <option value="Fahrenheit" id="f2">Fahrenheit</option>
+        <option value="Celsius" id="c2">Celcius</option>
+        <option value="Kelvin" id="k2">Kelvin</option>
+    </select> 
+
+    <br><br>
+
+    <label for="result" id="re">Result</label><br>
+    <input type="text" id="result" disabled>
+  <br>
+    <button onclick="Convert()">Convert</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
