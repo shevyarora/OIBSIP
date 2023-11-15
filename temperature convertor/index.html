@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Convertor</title>
     <style>
+        :root{
+            --primary-color:rgb(0, 0, 0);
+            --sec-color:rgb(60, 60, 60);
+        }
         h1{
             text-align: center;
         }
@@ -23,7 +27,7 @@
             border-left:none;
             border-right:none;
             border-top:none;
-            caret-color:blue;
+            caret-color:var(--primary-color);
             width:90px;
         }
         label{
@@ -36,13 +40,13 @@
             display:block;
             margin:auto;
             border-radius:50px;
-            background-color:rgb(0, 89, 255);
+            background-color:var(--primary-color);
             color:white;
             cursor: pointer;
             border:none;
         }
         button:hover{
-            background-color:rgb(111, 111, 120);
+            background-color:var(--sec-color);
         }
         #result{
             cursor: not-allowed;
@@ -73,7 +77,7 @@
     <label for="type">Type</label>
     <select name="type" id="type">
         <option value="Fahrenheit" id="f">Fahrenheit</option>
-        <option value="Celsius" id="c">Celcius</option>
+        <option value="Celsius" id="c">Celsius</option>
         <option value="Kelvin" id="k">Kelvin</option>
     </select>
 
@@ -82,7 +86,7 @@
     <label for="convert"id="convert">Convert Into</label><br>
     <select name="type" id="type2">
         <option value="Fahrenheit" id="f2">Fahrenheit</option>
-        <option value="Celsius" id="c2">Celcius</option>
+        <option value="Celsius" id="c2">Celsius</option>
         <option value="Kelvin" id="k2">Kelvin</option>
     </select> 
 
